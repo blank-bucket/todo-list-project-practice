@@ -13,6 +13,9 @@ const todoArray = JSON.parse(localStorage.getItem('todolist')) || [];
 
         if(!todoInput || !dueDate){
             alert('Enter a valid Todo list')
+            
+            todoInput = todoValue.value;
+            dueDate = dateValue.value;
         }
         else{
             todoArray.push([
@@ -47,7 +50,7 @@ const todoArray = JSON.parse(localStorage.getItem('todolist')) || [];
             <div>${todoInput}</div>
             <div>${dueDate}</div>
             <button onclick = "
-            todoArray.splice(${i},1);
+            removeStorage(${i});
             renderOnPage();
             ">Delete</button>`;
             saveStorage();
@@ -70,4 +73,12 @@ const todoArray = JSON.parse(localStorage.getItem('todolist')) || [];
 
     function saveStorage(){
         localStorage.setItem('todolist',JSON.stringify(todoArray));
+    }
+
+
+    /*============= To store results=======================*/
+
+    function removeStorage(i){
+        todoArray.splice(i,1);
+        localStorage.removeItem('todolist');
     }
