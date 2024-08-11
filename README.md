@@ -7,6 +7,7 @@ This Todo List application is a simple yet effective tool for managing tasks. Bu
 - Add tasks with due dates
 - Display tasks in a list format
 - Delete tasks from the list
+- Store tasks more permanently
 
 ## Usage
 1. Clone the repository to your local machine.
@@ -17,8 +18,8 @@ This Todo List application is a simple yet effective tool for managing tasks. Bu
 
 ## Code Structure
 - **index.html**: The main HTML file that includes the structure of the Todo List.
-- **styles/css.css**: The CSS file that styles the Todo List application.
-- **script/todolist.js**: The JavaScript file that contains the functionality for adding, displaying, and deleting tasks.
+- **styles**: The CSS file that styles the Todo List application.
+- **script/todolist_scripts.js**: The JavaScript file that contains the functionality for adding, displaying, and deleting tasks.
 
 ## Contributing
 Feel free to fork this repository, make improvements, and submit pull requests. Any contributions are welcome!

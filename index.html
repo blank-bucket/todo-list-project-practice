@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo-List</title>
-
-    <link rel="stylesheet" href="styles/css.css">
-
+    <title>Todo List For Practice</title>
+    <link rel="stylesheet" href="styles/genral.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
 
-    <h2>Todo List 02</h2>
-    <div class="input__div">
-        <input onkeydown="onPress(event);" class="js-input-value style__todo" type="text" placeholder="add your todo">
-        <input onkeydown="onPress(event);" class="todo__date style__duedate" type="date">
+    <h1>Todo List Practice Project</h1>
+    
+    <div class="on__grid">
+    
+        <input onkeydown="
+            onPress(event);
+            " class="todo__input" type="text"          placeholder="Add Todo Name">
+        <input onkeydown="
+        onPress(event);
+        " class="duedate" type="date">
+
         <button onclick="
-        addTodoList();
-        " onkeydown="onPress(event);" class="todo__list style__add__button">add</button>
+            getTodo(event);
+        " class="add__todo">add</button>
+    
     </div>
 
-    <div class="onpage__html onpage__gride"></div>
+    <div class="onpage onpage__grid"></div>
 
-    <script src="script/todolist.js"></script>
+    <script src="script/todolist_script.js"></script>
 </body>
 </html>
