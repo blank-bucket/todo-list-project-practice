@@ -26,9 +26,10 @@ const todoArray = JSON.parse(localStorage.getItem('todolist')) || [];
     
             console.log(todoArray);
             renderOnPage();
+
+            todoValue.value = '';
         }
 
-        todoValue.value = '';
 
     }
     /***===========Function to add TODO list on Page==============*****/
